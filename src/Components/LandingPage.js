@@ -1,9 +1,21 @@
-
+import {LandingBodyBackground, LandingBody, LandingBodyScroll, LandingPositionFixed} from './StyledComponents'
 
 function LandingPage() {
   return (
     <div className="LandingPage">
-<section><h1>Landing Page</h1></section>
+      {/* Body of Landing page */}
+      
+<LandingBodyBackground>
+  {/* LandingPositionFixed + LandingBodyScroll: section that covers entire page with opaque created background design effect. */}
+  <LandingPositionFixed><LandingBodyScroll> </ LandingBodyScroll></LandingPositionFixed>
+
+    <LandingBody>
+      <h1 style={{fontSize: '1000%'}}>Landing Page</h1>
+  </LandingBody>
+
+
+
+  </LandingBodyBackground>
     </div>
   );
 }
