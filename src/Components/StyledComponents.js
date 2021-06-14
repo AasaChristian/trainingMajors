@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 
 export const LandingBodyBackground = styled.section`
-height: 750px;
+height: 200px;
 background-color: #e8f3fa;
 `;
 
