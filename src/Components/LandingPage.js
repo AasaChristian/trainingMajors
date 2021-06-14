@@ -18,7 +18,7 @@ function LandingPage() {
     </LandingPositionFixed>
 
     <LandingBody>
-      <h1 style={{fontSize: '1000%'}}>Landing Page</h1>
+      <h1 style={{fontSize: '500%', display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>Major Training</h1>
   </LandingBody>
 
 
