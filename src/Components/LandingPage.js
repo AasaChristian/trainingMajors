@@ -9,10 +9,12 @@ function LandingPage() {
 <LandingBodyBackground>
   {/* LandingPositionFixed + LandingBodyScroll: section that covers entire page with opaque created background design effect. */}
   <LandingPositionFixed>
-          <LandingHeaderCont>
+
+    <LandingBodyScroll> 
+    <LandingHeaderCont>
    <Header/>
       </LandingHeaderCont>
-    <LandingBodyScroll> </ LandingBodyScroll>
+      </ LandingBodyScroll>
     </LandingPositionFixed>
 
     <LandingBody>
