@@ -39,3 +39,17 @@ top: 0;
 z-index: 1;
 position: sticky;
 `;
+
+export const MajorText = styled.h1`
+font-size: 500%;
+
+@media (max-width: 650px) {
+
+    font-size: 350%;
+  }
+
+  @media (max-width: 400px) {
+
+    font-size: 250%;
+  }
+`;
