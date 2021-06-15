@@ -1,6 +1,10 @@
 import {LandingBodyBackground, LandingBody, LandingBodyScroll, LandingPositionFixed,LandingHeaderCont, MajorText} from './StyledComponents'
 import Header from './Header'
+import Articles from './Articles'
+import {data} from '../DummyData'
 function LandingPage() {
+
+  console.log(data, "data")
   return (
     <div className="LandingPage">
 
@@ -19,12 +23,16 @@ function LandingPage() {
 
     <LandingBody>
       <MajorText style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>Major Training</MajorText>
+{data.articles.map((articles, i) => {
+  console.log(articles, "articles")
+  return(
+    <Articles
+    index={i}
+    title={articles.title}
+    body ={articles.body}/>
+  )
+})}
 
-      <section style={{height: "10%", width: "100%" ,display: 'flex', justifyContent: 'center' }}>
-        <div style={{height: "100%", width: "70%" ,border: "solid black 5px", backgroundColor: 'white', borderRadius: '8%', paddingTop:'10%'}}>
-          
-        </div>
-      </section>
   </LandingBody>
 
 
