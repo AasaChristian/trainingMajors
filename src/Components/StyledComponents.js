@@ -81,7 +81,7 @@ color: white;
 
 @media (max-width: 650px) {
 
-      font-size: 210%;
+      font-size: 200%;
     }
 
 `;
