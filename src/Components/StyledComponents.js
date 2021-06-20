@@ -46,9 +46,9 @@ position: sticky;
 `;
 
 export const MajorText = styled.h1`
-margin-bottom: 20%;
-font-size: 500%;
-
+margin-bottom: 10%;
+font-size: 700%;
+font-family: 'Sigmar One', cursive;
 @media (max-width: 650px) {
 
     font-size: 350%;
@@ -70,6 +70,7 @@ background-size: cover;
 `;
 
 export const ArticleTitle = styled.h1`
+font-family: 'Sigmar One', cursive;
 background: none;
  border-radius: 10%;
 border: white solid 4px;
@@ -84,4 +85,18 @@ color: white;
       font-size: 200%;
     }
 
+`;
+
+export const ArticleBody = styled.h1`
+font-family: 'Londrina Shadow', cursive;
+display: flex;
+ width: 85%; 
+ color: white; 
+ font-size: 300%;
+ margin-top: 2%;
+
+ @media (max-width: 650px) {
+
+  font-size: 200%;
+}
 `;

@@ -3,7 +3,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import aceBack from '../img/aceBack.jpg'
 import aceDeadlift from '../img/aceDeadlift.jpg'
-import {ArticleLeft, ArticleTitle} from './StyledComponents'
+import {ArticleLeft, ArticleTitle, ArticleBody} from './StyledComponents'
 
 
 function Articles(props) {
@@ -22,7 +22,10 @@ console.log(index % 2, "tw0")
 
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>          
             <ArticleTitle >{title}</ArticleTitle>
-          <h3 style={{display: 'flex', width: '85%', color: 'white', fontSize: '150%', marginTop: '0%'}}>{body}</h3>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+              <ArticleBody >{body}</ArticleBody>
+              </div>
+          
           </div>
 
         </ArticleLeft>
