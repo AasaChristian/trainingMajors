@@ -1,5 +1,7 @@
 
 import styled from 'styled-components'
+import aceBack from '../img/aceBack.jpg'
+import aceDeadlift from '../img/aceDeadlift.jpg'
 
 
 
@@ -44,6 +46,7 @@ position: sticky;
 `;
 
 export const MajorText = styled.h1`
+margin-bottom: 20%;
 font-size: 500%;
 
 @media (max-width: 650px) {
@@ -55,4 +58,13 @@ font-size: 500%;
 
     font-size: 250%;
   }
+`;
+
+export const ArticleLeft = styled.section`
+// margin-bottom: 50%; 
+height: 90%; 
+width: 96%;
+border: solid black 5px;
+background-size: cover;
+
 `;
