@@ -68,3 +68,20 @@ border: solid black 5px;
 background-size: cover;
 
 `;
+
+export const ArticleTitle = styled.h1`
+background: none;
+ border-radius: 10%;
+border: white solid 4px;
+color: white;
+    font-size: 320%; 
+    padding: 2%;
+     margin-bottom: 2%; 
+     margin-top: 4%;
+
+@media (max-width: 650px) {
+
+      font-size: 210%;
+    }
+
+`;
