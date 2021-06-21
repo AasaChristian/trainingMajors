@@ -99,7 +99,6 @@ display: flex;
  width: 85%; 
  color: #e4f0f6; 
  font-size: 300%;
- margin-top: 2%;
 background-color: #000000a3;
 border-radius: 5%;
  @media (max-width: 650px) {
@@ -111,4 +110,11 @@ border-radius: 5%;
 
   font-size: 150%;
 }
+`;
+
+export const FootText = styled.h4`
+color: white;
+margin-bottom: 0;
+display:flex;
+justify-content: center;
 `;
