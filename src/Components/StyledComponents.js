@@ -51,12 +51,12 @@ font-size: 700%;
 font-family: 'Sigmar One', cursive;
 @media (max-width: 650px) {
 
-    font-size: 350%;
+    font-size: 265%;
   }
 
   @media (max-width: 400px) {
 
-    font-size: 250%;
+    font-size: 100%;
   }
 `;
 
@@ -66,6 +66,8 @@ height: 90%;
 width: 96%;
 border: solid black 5px;
 background-size: cover;
+
+
 
 `;
 
@@ -78,11 +80,14 @@ color: white;
     font-size: 320%; 
     padding: 2%;
      margin-bottom: 2%; 
-     margin-top: 4%;
 
 @media (max-width: 650px) {
 
-      font-size: 200%;
+      font-size: 150%;
+    }
+@media (max-width: 350px) {
+
+      font-size: 100%;
     }
 
 `;
@@ -94,9 +99,14 @@ display: flex;
  color: white; 
  font-size: 300%;
  margin-top: 2%;
-
+object-fit: fill;
  @media (max-width: 650px) {
 
-  font-size: 200%;
+  font-size: 180%;
+}
+
+@media (max-width: 350px) {
+
+  font-size: 150%;
 }
 `;
