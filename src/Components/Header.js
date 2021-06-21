@@ -2,7 +2,7 @@ import {LandingBodyBackground, LandingBody, LandingBodyScroll, LandingPositionFi
 
 function Header() {
   return (
-    <div style={{display: "flex", flexDirection: 'row', justifyContent: "space-around"}}>
+    <div style={{display: "flex", flexDirection: 'row', justifyContent: "space-around", backgroundColor: '#00000029', zIndex: '1'}}>
 <h1>Login</h1>
 <h1>Schedule session</h1>
 

@@ -25,11 +25,12 @@ position: fixed;
 top: 0;
 height: 100%;
 width: 100%;
+z-index: 1;
 `;
 export const LandingBodyScroll = styled.section`
 height: 100%;
 width: 100%;
-overflow: scroll;
+// overflow: scroll;
 top: 0;
 z-index: 1;
 background: none;
