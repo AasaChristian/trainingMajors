@@ -6,7 +6,7 @@ export const data = {
     },
     {
       title: "Your Personal Time",
-      body: "Starting ypour fitness journey can be difficult. Training Majors will take the time to help you build a solid foundation first, then encrease the intensity in a safe and productive manner. ",
+      body: "Starting your fitness journey can be difficult. Training Majors will take the time to help you build a solid foundation first, then encrease the intensity in a safe and productive manner. ",
     },
     {
       title: "Your Personal Trainer",
