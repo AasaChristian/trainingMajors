@@ -20,7 +20,7 @@ console.log(index % 2, "tw0")
 
 
 
-          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>          
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', height: '90%', justifyContent: 'space-evenly'}}>          
             <ArticleTitle >{title}</ArticleTitle>
             <div style={{display: 'flex', justifyContent: 'center'}}>
               <ArticleBody >{body}</ArticleBody>
