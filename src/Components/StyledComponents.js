@@ -73,7 +73,8 @@ background-size: cover;
 
 export const ArticleTitle = styled.h1`
 font-family: 'Sigmar One', cursive;
-background: none;
+background-color: #000000a3;
+border-radius: 5%;
  border-radius: 10%;
 border: white solid 4px;
 color: white;
@@ -96,10 +97,11 @@ export const ArticleBody = styled.h1`
 font-family: 'Londrina Shadow', cursive;
 display: flex;
  width: 85%; 
- color: white; 
+ color: #e4f0f6; 
  font-size: 300%;
  margin-top: 2%;
-object-fit: fill;
+background-color: #000000a3;
+border-radius: 5%;
  @media (max-width: 650px) {
 
   font-size: 180%;
