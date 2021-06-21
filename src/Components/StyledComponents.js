@@ -51,7 +51,7 @@ font-size: 700%;
 font-family: 'Sigmar One', cursive;
 @media (max-width: 650px) {
 
-    font-size: 265%;
+    font-size: 245%;
   }
 
   @media (max-width: 400px) {
@@ -83,7 +83,7 @@ color: white;
 
 @media (max-width: 650px) {
 
-      font-size: 150%;
+      font-size: 145%;
     }
 @media (max-width: 350px) {
 
