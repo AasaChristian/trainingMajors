@@ -5,6 +5,7 @@ function Header() {
     <div style={{display: "flex", flexDirection: 'row', justifyContent: "space-around", zIndex: '1'}}>
 <h1>Login</h1>
 <h1>Schedule session</h1>
+<h1>Contact</h1>
 
     </div>
   );
