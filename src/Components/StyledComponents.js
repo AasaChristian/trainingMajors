@@ -14,7 +14,7 @@ export const LandingBody = styled.section`
 display: flex;
 flex-direction: column;
 // justify-content: space-evenly;
-height: 2000%;
+// height: 100%;
 width: 100%;
 overflow: scroll;
 background-color: #e8f3fa;
@@ -58,7 +58,8 @@ font-family: 'Sigmar One', cursive;
 
   @media (max-width: 400px) {
 
-    font-size: 100%;
+    font-size: 200%;
+    margin-top: 20%
   }
 `;
 
@@ -86,11 +87,11 @@ color: white;
 
 @media (max-width: 650px) {
 
-      font-size: 145%;
+      font-size: 125%;
     }
-@media (max-width: 350px) {
+@media (max-width: 380px) {
 
-      font-size: 100%;
+      font-size: 130%;
     }
 
 `;
@@ -106,10 +107,10 @@ border-radius: 5%;
 margin-top: 2%;
  @media (max-width: 650px) {
 
-  font-size: 170%;
+  font-size: 150%;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
 
   font-size: 140%;
 }

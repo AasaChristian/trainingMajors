@@ -23,7 +23,7 @@ function LandingPage() {
 
     <LandingBody>
       <MajorText style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>Major Training</MajorText>
-      <div style={{width: "98%", display: 'flex', flexDirection: 'column', justifyContent: "space-evenly", height: '75%', paddingLeft: '2%'}}>
+      <div style={{width: "98%", display: 'flex', flexDirection: 'column', justifyContent: "space-evenly", height: '95%', paddingLeft: '2%'}}>
         {data.articles.map((articles, i) => {
   console.log(articles, "articles")
   return(
