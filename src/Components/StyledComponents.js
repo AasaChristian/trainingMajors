@@ -25,7 +25,7 @@ position: fixed;
 top: 0;
 height: 100%;
 width: 100%;
-z-index: 1;
+z-index: 2;
 `;
 export const LandingBodyScroll = styled.section`
 height: 100%;
