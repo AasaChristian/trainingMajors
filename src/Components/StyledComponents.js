@@ -96,21 +96,22 @@ color: white;
 `;
 
 export const ArticleBody = styled.h1`
-font-family: 'Londrina Shadow', cursive;
+font-family: 'Zen Dots', cursive;
 display: flex;
  width: 85%; 
  color: #e4f0f6; 
- font-size: 300%;
+ font-size: 270%;
 background-color: #000000a3;
 border-radius: 5%;
+margin-top: 2%;
  @media (max-width: 650px) {
 
-  font-size: 180%;
+  font-size: 170%;
 }
 
 @media (max-width: 350px) {
 
-  font-size: 150%;
+  font-size: 140%;
 }
 `;
 
