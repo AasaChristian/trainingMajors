@@ -1,15 +1,20 @@
 import './App.css';
 import Footer from './Components/Footer';
 import LandingPage from './Components/LandingPage'
-
+import Contact from './Components/Contact'
+import {Route, Switch} from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <div>
-        <LandingPage/>
+     <Switch> 
+      <Route exact path= '/'
+      render={props => <LandingPage {...props}   />}
+      />
+           <Route exact path= '/contact'
+      render={props => <Contact  {...props}   />}
+      />
 
-      </div>
-
+      </Switch> 
       <section style={{ bottom: "0", width: "100%", position: "fixed", zIndex: "2"}}>
         <Footer/>
       </section>
