@@ -55,12 +55,12 @@ font-size: 700%;
 font-family: 'Sigmar One', cursive;
 @media (max-width: 650px) {
 
-    font-size: 245%;
+    font-size: 225%;
   }
 
   @media (max-width: 400px) {
 
-    font-size: 200%;
+    font-size: 180%;
     margin-top: 20%
   }
 `;
