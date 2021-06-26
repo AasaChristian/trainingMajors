@@ -13,4 +13,21 @@ export const data = {
       body: "Personal Training is more than just grinding reps in the gym. Training Majors offer guidence on your diet, recovery and general wellness.",
     },
   ],
+
+  contacts: [
+    {
+      title: "Email",
+      body: "tm89citypersonaltraining@yahoo.com"
+    },
+    {
+      title: "Phone",
+      body: "804-664-0306"
+
+    },
+    {
+      title: "IstaGram",
+      body: "instagram"
+
+    }
+  ]
 };
