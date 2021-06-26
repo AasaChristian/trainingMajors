@@ -31,7 +31,7 @@ function Contact() {
     const {title, body} = articles
     const index = i
     return(
-<section style={{display: 'flex', justifyContent: 'space-around'}}>
+<section key ={i} style={{display: 'flex', justifyContent: 'space-around'}}>
   <h1>{title}</h1>
   <h1>{body}</h1>
 </section>
