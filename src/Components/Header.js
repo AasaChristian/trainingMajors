@@ -1,11 +1,13 @@
 import {LandingBodyBackground, LandingBody, LandingBodyScroll, LandingPositionFixed,LandingHeaderCont} from './StyledComponents'
-
-function Header() {
+import {NavLink} from "react-router-dom"
+function Header(props) {
+const {contactHome, linkTo } = props
   return (
     <div style={{display: "flex", flexDirection: 'row', justifyContent: "space-around", zIndex: '1'}}>
 <h1>Login</h1>
 <h1>Schedule session</h1>
-<h1>Contact</h1>
+<NavLink to={linkTo}><h1>{contactHome}</h1></NavLink>
+
 
     </div>
   );

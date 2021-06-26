@@ -16,7 +16,10 @@ function LandingPage() {
 
     <LandingBodyScroll> 
     <LandingHeaderCont>
-   <Header/>
+   <Header
+      contactHome = "Contact"
+      linkTo = "/contact"
+   />
       </LandingHeaderCont>
       </ LandingBodyScroll>
     </LandingPositionFixed>
