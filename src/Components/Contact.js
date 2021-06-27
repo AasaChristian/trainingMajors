@@ -55,6 +55,7 @@ function Contact() {
               justifyContent: "space-evenly",
               width: "100%",
               marginBottom: "10%",
+              zIndex: '1'
             }}
           >
             <div
