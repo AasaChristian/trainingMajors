@@ -22,20 +22,21 @@ export const data = {
   contacts: [
     {
       title: "Email",
+      ref: "tm89citypersonaltraining@yahoo.com",
       body: "tm89citypersonaltraining@yahoo.com",
       imgIcon: emailing
     },
     {
-      title: "Phone",
-      body: "804-664-0306",
-      imgIcon: calling
-
-    },
-    {
-      title: "IstaGram",
+      title: "InstaGram",
+      ref: "https://instagram.com/training_majors_city?utm_medium=copy_link",
       body: "instagram",
       imgIcon: IGing
-
-    }
+    },
+    {
+      title: "Phone",
+      ref: "tel:+1-804-664-0306",
+      body: "804-664-0306",
+      imgIcon: calling
+    },
   ]
 };

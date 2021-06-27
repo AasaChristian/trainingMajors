@@ -28,7 +28,7 @@ function Contact() {
           </LandingHeaderCont>
         </LandingBodyScroll>
       </LandingPositionFixed>
-      <LandingBody style={{ height: "100%" }}>
+      <LandingBody >
         <MajorText
           style={{
             display: "flex",
