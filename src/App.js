@@ -11,13 +11,8 @@ function App() {
       render={props => <LandingPage {...props}   />}
       />
       <Route exact path= '/contact'
-      render={props => <Contact  {...props}   />}
       >
-
-        <Redirect to="/contact" >
-
-        <Redirect to="/" ></Redirect>
-        </Redirect>
+        <Contact/>
       </Route>
 
       </Switch> 
