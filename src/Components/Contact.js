@@ -92,12 +92,21 @@ function Contact(props) {
                       backgroundImage: `url(${imgIcon})`,
                       backgroundSize: "cover",
                       height: "400px",
-                      width: "700px",
-                    }}
-                  ></div>
+                      width: "400px",
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'space-evenly'
 
-                  <h1>{title}</h1>
-                  <h1>{body}</h1>
+
+                    }}
+                  >
+                  <h1 style={{backgroundColor: '#ffffffa6', backgroundSize: 'cover', display: 'flex', justifyContent: 'center', borderRadius: '10%'}}>{title}</h1>
+                  <h1 style={{backgroundColor: '#ffffffa6',  backgroundSize: 'cover', display: 'flex', justifyContent: 'center', borderRadius: '10%'}}>{body}</h1>
+
+                  </div>
+
+
                 </section>
               </div>
             );
