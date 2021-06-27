@@ -22,13 +22,13 @@ export const data = {
   contacts: [
     {
       title: "InstaGram",
-      ref: "https://instagram.com/training_majors_city?utm_medium=copy_link",
-      body: "instagram",
+      ref: `https://instagram.com/training_majors_city?utm_medium=copy_link`,
+      body: "https://instagram.com/training_majors_city?utm_medium=copy_link",
       imgIcon: IGing
     },
     {
       title: "Email",
-      ref: "tm89citypersonaltraining@yahoo.com",
+      ref: "mailto:tm89citypersonaltraining@yahoo.com",
       body: "tm89citypersonaltraining@yahoo.com",
       imgIcon: emailing
     },

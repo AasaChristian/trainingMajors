@@ -15,6 +15,7 @@ import Articles from "./Articles";
 import Fade from "react-reveal/Fade";
 import Pulse from "react-reveal/Pulse";
 import aceBio from "../img/ACeBio.jpg";
+import { Link } from "react-router-dom";
 function Contact(props) {
   const contacts = data.contacts;
 
@@ -24,11 +25,11 @@ function Contact(props) {
       <LandingPositionFixed>
         <LandingBodyScroll>
           <LandingHeaderCont>
-            <Header contactHome="Home" linkTo= {true} setShow={props.setShow}/>
+            <Header contactHome="Home" linkTo={true} setShow={props.setShow} />
           </LandingHeaderCont>
         </LandingBodyScroll>
       </LandingPositionFixed>
-      <LandingBody >
+      <LandingBody>
         <MajorText
           style={{
             display: "flex",
@@ -55,7 +56,7 @@ function Contact(props) {
               justifyContent: "space-evenly",
               width: "100%",
               marginBottom: "10%",
-              zIndex: '1'
+              zIndex: "1",
             }}
           >
             <div
@@ -67,7 +68,14 @@ function Contact(props) {
               }}
             ></div>
 
-            <div style={{ display: "flex", justifyContent: "center", flexDirection: 'column', alignItems: 'center' }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <h1>Aasa Christian</h1>
               <h1>Owner/Personal Trainer</h1>
               <h1> 10+ Years of Fitness Training </h1>
@@ -75,8 +83,9 @@ function Contact(props) {
           </section>
           {contacts.map((articles, i) => {
             console.log(articles, "articles");
-            const { title, body, imgIcon } = articles;
+            const { title, body, imgIcon, ref } = articles;
             const index = i;
+            console.log(ref, "ref")
             return (
               <div>
                 <section
@@ -93,20 +102,40 @@ function Contact(props) {
                       backgroundSize: "cover",
                       height: "400px",
                       width: "400px",
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'space-evenly'
-
-
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "space-evenly",
                     }}
                   >
-                  <h1 style={{backgroundColor: '#ffffffa6', backgroundSize: 'cover', display: 'flex', justifyContent: 'center', borderRadius: '10%'}}>{title}</h1>
-                  <h1 style={{backgroundColor: '#ffffffa6',  backgroundSize: 'cover', display: 'flex', justifyContent: 'center', borderRadius: '10%'}}>{body}</h1>
+                    <a href={ ref} 
+                        style={{
+                          backgroundColor: "#ffffffa6",
+                          backgroundSize: "cover",
+                          display: "flex",
+                          justifyContent: "center",
+                          borderRadius: "10%",
+                          zIndex: '1'
+                        }}
+                      >
+    
+                        {title}
+              
+                    </a>
 
+                    <a
+                    href={ ref}
+                      style={{
+                        backgroundColor: "#ffffffa6",
+                        backgroundSize: "cover",
+                        display: "flex",
+                        justifyContent: "center",
+                        borderRadius: "10%",
+                      }}
+                    >
+                      {body}
+                    </a>
                   </div>
-
-
                 </section>
               </div>
             );
