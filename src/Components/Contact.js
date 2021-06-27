@@ -19,6 +19,7 @@ import Fade from "react-reveal/Fade";
 import Pulse from "react-reveal/Pulse";
 import aceBio from "../img/ACeBio.jpg";
 import { Link } from "react-router-dom";
+import Zoom from 'react-reveal/Zoom';
 function Contact(props) {
   const contacts = data.contacts;
 
@@ -69,7 +70,7 @@ function Contact(props) {
             >
               <h1>Aasa Christian</h1>
               <h1>Owner/Personal Trainer</h1>
-              <h1> 10+ Years of Fitness Training </h1>
+              <h1> Richmond,VA </h1>
             </div>
           </ContactTop>
 
@@ -77,6 +78,7 @@ function Contact(props) {
             const { title, body, imgIcon, ref } = articles;
             const index = i;
             return (
+              <Zoom>
               <div>
                 <section
                   key={i}
@@ -119,7 +121,7 @@ function Contact(props) {
                     </ContactImg>
                   </a>
                 </section>
-              </div>
+              </div></Zoom>
             );
           })}
         </div>
