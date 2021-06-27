@@ -10,9 +10,15 @@ function App() {
       <Route exact path= '/'
       render={props => <LandingPage {...props}   />}
       />
-           <Route path= '/contact'
+      <Route exact path= '/contact'
       render={props => <Contact  {...props}   />}
-      />
+      >
+
+        <Redirect to="/contact" >
+
+        <Redirect to="/" ></Redirect>
+        </Redirect>
+      </Route>
 
       </Switch> 
       <section style={{ bottom: "0", width: "100%", position: "fixed", zIndex: "2"}}>
