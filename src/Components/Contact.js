@@ -8,6 +8,9 @@ import {
   LandingPositionFixed,
   LandingHeaderCont,
   MajorText,
+  BioImgDiv,
+  ContactImg,
+  ContactTop
 } from "./StyledComponents";
 import Header from "./Header";
 import { data } from "../DummyData";
@@ -49,24 +52,12 @@ function Contact(props) {
             paddingLeft: "2%",
           }}
         >
-          <section
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-evenly",
-              width: "100%",
-              marginBottom: "10%",
-              zIndex: "1",
-            }}
+          <ContactTop
+
           >
-            <div
-              style={{
-                backgroundImage: `url(${aceBio})`,
-                height: "600px",
-                width: "800px",
-                backgroundSize: "cover",
-              }}
-            ></div>
+            <BioImgDiv
+              style={{ backgroundImage: `url(${aceBio})` }}
+            ></BioImgDiv>
 
             <div
               style={{
@@ -80,8 +71,8 @@ function Contact(props) {
               <h1>Owner/Personal Trainer</h1>
               <h1> 10+ Years of Fitness Training </h1>
             </div>
-          </section>
-          
+          </ContactTop>
+
           {contacts.map((articles, i) => {
             const { title, body, imgIcon, ref } = articles;
             const index = i;
@@ -93,53 +84,39 @@ function Contact(props) {
                     display: "flex",
                     alignItems: "center",
                     flexDirection: "column",
-                    justifyContent: 'space-evenly'
+                    justifyContent: "space-evenly",
                   }}
                 >
-                    <h1 
+                  <h1
+                    style={{
+                      backgroundColor: "#ffffffa6",
+                      backgroundSize: "cover",
+                      display: "flex",
+                      justifyContent: "center",
+                      borderRadius: "10%",
+                      zIndex: "1",
+                    }}
+                  >
+                    {title}
+                  </h1>
+                  <a href={ref} style={{ zIndex: "1" }}>
+                    <ContactImg
+                      style={{
+                        backgroundImage: `url(${imgIcon})`,
+                      }}
+                    >
+                      <h1
                         style={{
                           backgroundColor: "#ffffffa6",
                           backgroundSize: "cover",
                           display: "flex",
                           justifyContent: "center",
                           borderRadius: "10%",
-                          zIndex: '1'
                         }}
                       >
-    
-                        {title}
-              
-                    </h1>
-                    <a href={ref} style={{ zIndex: '1'}}> 
-                  <div
-                    style={{
-                      backgroundImage: `url(${imgIcon})`,
-                      backgroundSize: "cover",
-                      height: "400px",
-                      width: "400px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      justifyContent: "space-evenly",
-                      borderRadius: '10%'
-                    }}
-
-                    
-                  >
-                  
-
-                    <h1
-                      style={{
-                        backgroundColor: "#ffffffa6",
-                        backgroundSize: "cover",
-                        display: "flex",
-                        justifyContent: "center",
-                        borderRadius: "10%",
-                      }}
-                    >
-                      {body}
-                    </h1>
-                  </div>
+                        {body}
+                      </h1>
+                    </ContactImg>
                   </a>
                 </section>
               </div>

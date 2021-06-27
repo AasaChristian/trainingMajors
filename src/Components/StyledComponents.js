@@ -124,3 +124,71 @@ margin-bottom: 0;
 display:flex;
 justify-content: center;
 `;
+
+export const BioImgDiv = styled.div`
+height: 600px;
+width: 800px;
+background-size: cover;
+border-radius: 10%;
+
+@media (max-width: 650px) {
+
+  height: 400px;
+  width: 400px;
+}
+
+@media (max-width: 380px) {
+
+  height: 300px;
+  width: 300px;
+}
+`;
+
+export const ContactImg = styled.div`
+height: 600px;
+width: 600px;
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+border-radius: 10%;
+
+@media (max-width: 650px) {
+
+  height: 400px;
+  width: 400px;
+}
+
+@media (max-width: 380px) {
+
+  height: 300px;
+  width: 300px;
+}
+`;
+
+export const ContactTop = styled.section`
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+margin-bottom: 10%;
+z-index: 1;
+
+@media (max-width: 650px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media (max-width: 380px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+`;
+
+
