@@ -15,7 +15,7 @@ import Articles from "./Articles";
 import Fade from "react-reveal/Fade";
 import Pulse from "react-reveal/Pulse";
 import aceBio from "../img/ACeBio.jpg";
-function Contact() {
+function Contact(props) {
   const contacts = data.contacts;
 
   console.log(contacts, "contacts");
@@ -24,7 +24,7 @@ function Contact() {
       <LandingPositionFixed>
         <LandingBodyScroll>
           <LandingHeaderCont>
-            <Header contactHome="Home" linkTo="/" />
+            <Header contactHome="Home" linkTo= {true} setShow={props.setShow}/>
           </LandingHeaderCont>
         </LandingBodyScroll>
       </LandingPositionFixed>

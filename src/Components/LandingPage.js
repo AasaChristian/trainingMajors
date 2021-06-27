@@ -2,7 +2,7 @@ import {LandingBodyBackground, LandingBody, LandingBodyScroll, LandingPositionFi
 import Header from './Header'
 import Articles from './Articles'
 import {data} from '../DummyData'
-function LandingPage() {
+function LandingPage(props) {
 
   console.log(data, "data")
   return (
@@ -18,7 +18,8 @@ function LandingPage() {
     <LandingHeaderCont>
    <Header
       contactHome = "Contact"
-      linkTo = "/con"
+      linkTo = {false}
+      setShow={props.setShow}
    />
       </LandingHeaderCont>
       </ LandingBodyScroll>
