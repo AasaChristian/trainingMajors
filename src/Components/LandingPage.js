@@ -18,7 +18,7 @@ function LandingPage() {
     <LandingHeaderCont>
    <Header
       contactHome = "Contact"
-      linkTo = "/contact"
+      linkTo = "/con"
    />
       </LandingHeaderCont>
       </ LandingBodyScroll>

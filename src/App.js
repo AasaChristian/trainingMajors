@@ -10,7 +10,7 @@ function App() {
       <Route exact path= '/'
       render={props => <LandingPage {...props}   />}
       />
-      <Route exact path= '/contact'
+      <Route exact path= '/con'
       >
         <Contact/>
       </Route>
