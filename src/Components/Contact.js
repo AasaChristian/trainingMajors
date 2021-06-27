@@ -62,8 +62,8 @@ function Contact(props) {
             <div
               style={{
                 backgroundImage: `url(${aceBio})`,
-                height: "400px",
-                width: "400px",
+                height: "600px",
+                width: "800px",
                 backgroundSize: "cover",
               }}
             ></div>
@@ -81,11 +81,10 @@ function Contact(props) {
               <h1> 10+ Years of Fitness Training </h1>
             </div>
           </section>
+          
           {contacts.map((articles, i) => {
-            console.log(articles, "articles");
             const { title, body, imgIcon, ref } = articles;
             const index = i;
-            console.log(ref, "ref")
             return (
               <div>
                 <section
@@ -94,21 +93,10 @@ function Contact(props) {
                     display: "flex",
                     alignItems: "center",
                     flexDirection: "column",
+                    justifyContent: 'space-evenly'
                   }}
                 >
-                  <div
-                    style={{
-                      backgroundImage: `url(${imgIcon})`,
-                      backgroundSize: "cover",
-                      height: "400px",
-                      width: "400px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      justifyContent: "space-evenly",
-                    }}
-                  >
-                    <a href={ ref} 
+                    <h1 
                         style={{
                           backgroundColor: "#ffffffa6",
                           backgroundSize: "cover",
@@ -121,10 +109,26 @@ function Contact(props) {
     
                         {title}
               
-                    </a>
+                    </h1>
+                    <a href={ref} style={{ zIndex: '1'}}> 
+                  <div
+                    style={{
+                      backgroundImage: `url(${imgIcon})`,
+                      backgroundSize: "cover",
+                      height: "400px",
+                      width: "400px",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "space-evenly",
+                      borderRadius: '10%'
+                    }}
 
-                    <a
-                    href={ ref}
+                    
+                  >
+                  
+
+                    <h1
                       style={{
                         backgroundColor: "#ffffffa6",
                         backgroundSize: "cover",
@@ -134,8 +138,9 @@ function Contact(props) {
                       }}
                     >
                       {body}
-                    </a>
+                    </h1>
                   </div>
+                  </a>
                 </section>
               </div>
             );

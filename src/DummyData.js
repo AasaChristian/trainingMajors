@@ -1,6 +1,6 @@
-import calling from './img/calling.jpg'
-import emailing from './img/emailing.jpg'
-import IGing from './img/IGing.jpg'
+import calling from './img/phone.jpg'
+import emailing from './img/mail.jpg'
+import IGing from './img/insta.jpg'
 
 
 export const data = {
@@ -23,7 +23,7 @@ export const data = {
     {
       title: "InstaGram",
       ref: `https://instagram.com/training_majors_city?utm_medium=copy_link`,
-      body: "https://instagram.com/training_majors_city?utm_medium=copy_link",
+      body: "training_majors_city",
       imgIcon: IGing
     },
     {
