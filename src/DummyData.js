@@ -1,3 +1,8 @@
+import calling from './img/calling.jpg'
+import emailing from './img/emailing.jpg'
+import IGing from './img/IGing.jpg'
+
+
 export const data = {
   articles: [
     {
@@ -17,16 +22,19 @@ export const data = {
   contacts: [
     {
       title: "Email",
-      body: "tm89citypersonaltraining@yahoo.com"
+      body: "tm89citypersonaltraining@yahoo.com",
+      imgIcon: emailing
     },
     {
       title: "Phone",
-      body: "804-664-0306"
+      body: "804-664-0306",
+      imgIcon: calling
 
     },
     {
       title: "IstaGram",
-      body: "instagram"
+      body: "instagram",
+      imgIcon: IGing
 
     }
   ]
